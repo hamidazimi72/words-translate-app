@@ -1,6 +1,13 @@
-import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
+import { HeroUIProvider } from "@heroui/react";
+
+import "@/styles/globals.css";
+
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <HeroUIProvider>
+      <Component {...pageProps} />
+    </HeroUIProvider>
+  );
 }

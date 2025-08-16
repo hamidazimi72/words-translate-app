@@ -36,7 +36,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       fs.promises
         .writeFile(
           knownsFilePath,
-          JSON.stringify({ [word]: { word, translate: "", frequency: correctAnswerNum } }, null, 2),
+          JSON.stringify({ [word]: { word: wordObj?.word, frequency: wordObj?.frequency, translate: "" } }, null, 2),
           "utf-8"
         )
         .then(() => {

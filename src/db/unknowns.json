@@ -5,6 +5,12 @@
     "frequency": 653,
     "correctNumber": 0
   },
+  "code": {
+    "word": "code",
+    "frequency": 358,
+    "translate": "",
+    "correctNumber": 0
+  },
   "and": {
     "word": "and",
     "translate": "",
@@ -19,8 +25,8 @@
   },
   "you": {
     "word": "you",
-    "translate": "",
     "frequency": 185,
+    "translate": "",
     "correctNumber": 0
   },
   "for": {
@@ -243,7 +249,7 @@
     "word": "how",
     "translate": "",
     "frequency": 29,
-    "correctNumber": 1
+    "correctNumber": 0
   },
   "classes": {
     "word": "classes",
@@ -5325,7 +5331,7 @@
     "word": "likely",
     "translate": "",
     "frequency": 3,
-    "correctNumber": 1
+    "correctNumber": 0
   },
   "however": {
     "word": "however",
@@ -8103,7 +8109,7 @@
     "word": "robust",
     "translate": "",
     "frequency": 2,
-    "correctNumber": 1
+    "correctNumber": 0
   },
   "craft": {
     "word": "craft",
@@ -14187,7 +14193,7 @@
     "word": "seeing",
     "translate": "",
     "frequency": 1,
-    "correctNumber": 1
+    "correctNumber": 0
   },
   "deciding": {
     "word": "deciding",
@@ -15789,7 +15795,7 @@
     "word": "implement",
     "translate": "",
     "frequency": 1,
-    "correctNumber": 3
+    "correctNumber": 0
   },
   "covered": {
     "word": "covered",

@@ -6,14 +6,14 @@ const Question = () => {
 
   const fetchQuestionHandler = () => {
     axios
-      .get(`/api/question`)
+      .get(`/api/quiz/question`)
       .then((res) => setData({ ...res?.data }))
       .catch((err) => console.log(err));
   };
 
   const sendAnswerHandler = (word: string, translate: string) => {
     axios
-      .post(`/api/answer`, { word, translate })
+      .post(`/api/quiz/answer`, { word, translate })
       .then((res) => console.log(res?.data))
       .catch((err) => console.log(err))
       .finally(() => fetchQuestionHandler());
