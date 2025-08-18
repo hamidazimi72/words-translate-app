@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Button } from "@heroui/react";
 
+import { Knowns as KnownsModules } from "@/modules";
+
 const Knowns = () => {
   const [data, setData] = useState<{ word: string; frequency: number; translate: string }[]>([]);
   const [status, setStatus] = useState<"init" | "loading" | "ok" | "fail">("init");
@@ -12,7 +14,8 @@ const Knowns = () => {
     axios
       .get(`/api/permanent-memory/fetch-all`)
       .then((res) => {
-        setData([...res?.data?.info]);
+        const data: KnownsModules.Type.item[] = Object.values(res?.data?.info);
+        setData(data);
         setStatus("ok");
       })
       .catch((err) => setStatus("fail"));
@@ -23,7 +26,8 @@ const Knowns = () => {
     axios
       .post(`/api/permanent-memory/return-word`, { word })
       .then((res) => {
-        fetchAllDataHandler();
+        setData(Object.values(res?.data?.info));
+        // fetchAllDataHandler();
         setStatus("ok");
       })
       .catch((err) => setStatus("fail"));

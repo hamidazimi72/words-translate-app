@@ -8,20 +8,21 @@ const Config = () => {
   const fetchAllConfigHandler = () => {
     axios
       .get(`/api/config/fetch-all`)
-      .then((res) => setData({ ...res?.data }))
+      .then((res) => setData({ ...res?.data?.info }))
       .catch((err) => console.log(err));
   };
 
   const updateSingleConfigHandler = (symbol: string, value: string) => {
     axios
       .put(`/api/config/update`, { symbol, value })
-      .then((res) => fetchAllConfigHandler())
+      .then((res) => setData({ ...res?.data?.info }))
       .catch((err) => console.log(err));
   };
 
   useEffect(() => {
     fetchAllConfigHandler();
   }, []);
+
   return (
     <div className="max-w-6/12 mx-auto">
       <div>

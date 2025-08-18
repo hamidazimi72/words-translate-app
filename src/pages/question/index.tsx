@@ -7,21 +7,21 @@ const Question = () => {
   const fetchQuestionHandler = () => {
     axios
       .get(`/api/quiz/question`)
-      .then((res) => setData({ ...res?.data }))
+      .then((res) => setData({ ...res?.data?.info }))
       .catch((err) => console.log(err));
   };
 
   const sendAnswerHandler = (word: string, translate: string) => {
     axios
       .post(`/api/quiz/answer`, { word, translate })
-      .then((res) => console.log(res?.data))
-      .catch((err) => console.log(err))
-      .finally(() => fetchQuestionHandler());
+      .then((res) => fetchQuestionHandler())
+      .catch((err) => console.log(err));
   };
 
   useEffect(() => {
     fetchQuestionHandler();
   }, []);
+
   return (
     <div className="max-w-6/12 mx-auto">
       <h2>{data?.word}</h2>
