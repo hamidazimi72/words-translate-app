@@ -46,3 +46,38 @@ export const updateWords = async (words: Record<string, Unknowns.Type.item>) => 
     throw err;
   }
 };
+
+export const deleteWord = async (word: string) => {
+  try {
+    const wordObj = await getSingleWord(word);
+
+    if (!wordObj) throw new Error("کلمه یافت نشد!");
+
+    const unknownsItems = await getAllWords();
+
+    delete unknownsItems[word];
+
+    await fs.promises.writeFile(unknownsFilePath, JSON.stringify(unknownsItems, null, 2), "utf-8");
+  } catch (err: any) {
+    throw err;
+  }
+};
+
+export const saveWord = async (wordObj: Unknowns.Type.item) => {
+  try {
+    const unknownsItems = await getAllWords();
+    const unknownsList: Unknowns.Type.item[] = Object.values(unknownsItems);
+    unknownsList.push({ ...wordObj });
+    const sortedUnknownsList: Unknowns.Type.item[] = unknownsList.sort((a, b) => b?.frequency - a?.frequency);
+    const updatedUnknownsItems: Record<string, Unknowns.Type.item> = {};
+
+    for (const item of sortedUnknownsList) {
+      updatedUnknownsItems[item?.word] = { ...item };
+    }
+
+    await fs.promises.writeFile(unknownsFilePath, JSON.stringify(updatedUnknownsItems, null, 2), "utf-8");
+    return wordObj;
+  } catch (err: any) {
+    throw err;
+  }
+};

@@ -3,7 +3,7 @@
     "word": "the",
     "translate": "",
     "frequency": 653,
-    "correctNumber": 1
+    "correctNumber": 2
   },
   "code": {
     "word": "code",
@@ -83,26 +83,26 @@
     "frequency": 63,
     "correctNumber": 0
   },
-  "from": {
-    "word": "from",
-    "translate": "",
-    "frequency": 63,
-    "correctNumber": 0
-  },
   "have": {
     "word": "have",
     "translate": "",
     "frequency": 63,
     "correctNumber": 0
   },
-  "what": {
-    "word": "what",
+  "from": {
+    "word": "from",
     "translate": "",
-    "frequency": 60,
+    "frequency": 63,
     "correctNumber": 0
   },
   "they": {
     "word": "they",
+    "translate": "",
+    "frequency": 60,
+    "correctNumber": 0
+  },
+  "what": {
+    "word": "what",
     "translate": "",
     "frequency": 60,
     "correctNumber": 0
@@ -19197,6 +19197,12 @@
     "word": "concise",
     "translate": "",
     "frequency": 1,
+    "correctNumber": 0
+  },
+  "asdasdasd": {
+    "word": "asdasdasd",
+    "translate": "",
+    "frequency": 0,
     "correctNumber": 0
   }
 }

@@ -34,3 +34,19 @@ export const updateWords = async (word: string) => {
     throw err;
   }
 };
+
+export const saveWord = async (word: string) => {
+  try {
+    const unknownsItems = await Unknowns.Model.getAllWords();
+    const wordObj = unknownsItems[word];
+    if (!wordObj) throw new Error("کلمه مورد نظر در لیست ناشناخته‌ها یافت نشد!");
+
+    const knownsItems = await Knowns.Model.getAllWords();
+    knownsItems[wordObj?.word] = { word: wordObj?.word, translate: wordObj?.translate, frequency: wordObj?.frequency };
+    const updatedKnownsItems = await Knowns.Model.updateWords(knownsItems);
+    await Unknowns.Model.deleteWord(wordObj?.word);
+    return updatedKnownsItems;
+  } catch (error) {
+    throw error;
+  }
+};

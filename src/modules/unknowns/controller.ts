@@ -72,3 +72,12 @@ export const checkAnswer = async (word: string, translate: string) => {
     throw new Error(error?.message);
   }
 };
+
+export const saveWord = async (wordObj: Unknowns.Type.item) => {
+  try {
+    const response = await Unknowns.Model.saveWord(wordObj);
+    return response;
+  } catch (error) {
+    throw error;
+  }
+};
