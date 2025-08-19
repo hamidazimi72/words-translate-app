@@ -81,3 +81,25 @@ export const saveWord = async (wordObj: Unknowns.Type.item) => {
     throw err;
   }
 };
+
+export const getWordsWithoutTranslate = async (size: number) => {
+  try {
+    const unknownsItems = await getAllWords();
+    const WordWithoutTranslateList = Object.values(unknownsItems)
+      .filter((item) => !item.translate)
+      .slice(0, size);
+    return WordWithoutTranslateList;
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const setTranslate = async (word: string, translate: string) => {
+  try {
+    const unknownsItems = await getAllWords();
+    unknownsItems[word].translate = translate;
+    await fs.promises.writeFile(unknownsFilePath, JSON.stringify(unknownsItems, null, 2), "utf-8");
+  } catch (error) {
+    throw error;
+  }
+};

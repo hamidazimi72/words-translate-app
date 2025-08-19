@@ -18,33 +18,6 @@ type formValuesType = { word: string; translate: string; frequency: string };
 
 const initialState = { word: "", translate: "", frequency: "" };
 
-interface DTO_translator_item {
-  responseData: { translatedText: string; match: number };
-  quotaFinished: boolean;
-  mtLangSupported: string | number | null;
-  responseDetails: string;
-  responseStatus: number;
-  responderId: number | null;
-  exception_code: number | null;
-  matches: {
-    id: string;
-    segment: string;
-    translation: string;
-    source: string;
-    target: string;
-    quality: string | number;
-    reference: null;
-    "usage-count": number;
-    subject: string;
-    "created-by": string;
-    "last-updated-by": string;
-    "create-date": string;
-    "last-update-date": string;
-    match: number;
-    penalty: number;
-  }[];
-}
-
 const Question = () => {
   const [data, setData] = useState<{ word: string; options: string[] }>();
 
@@ -86,16 +59,6 @@ const Question = () => {
       .catch((err) => console.log(err));
   };
 
-  const testTranslator = async (word: string) => {
-    try {
-      const response: { message: string; info: DTO_translator_item } = await axios.post("/api/translator/en-to-fa", {
-        word: word || "",
-      });
-    } catch (error: any) {
-      console.log(error?.message);
-    }
-  };
-
   useEffect(() => {
     fetchQuestionHandler();
   }, []);
@@ -122,7 +85,6 @@ const Question = () => {
         <button onClick={fetchQuestionHandler}>کلمه جدید</button>
         <button onClick={onOpen}>افزودن کلمه جدید</button>
         <button onClick={saveToKnownsHandler}>انتقال به حافظه دائمی</button>
-        <button onClick={() => testTranslator("magic")}>تست ترجمه</button>
       </div>
 
       <Modal isOpen={isOpen} onOpenChange={onOpenChange}>

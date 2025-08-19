@@ -81,3 +81,18 @@ export const saveWord = async (wordObj: Unknowns.Type.item) => {
     throw error;
   }
 };
+
+export const fetchWordsWithoutTranslate = async (size: number) => {
+  try {
+    const list: Unknowns.Type.item[] = await Unknowns.Model.getWordsWithoutTranslate(size);
+    return list;
+  } catch (error) {}
+};
+
+export const setTranslate = async (word: string, translate: string) => {
+  try {
+    await Unknowns.Model.setTranslate(word, translate);
+  } catch (error) {
+    throw error;
+  }
+};
