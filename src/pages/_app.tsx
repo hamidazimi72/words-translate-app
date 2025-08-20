@@ -1,13 +1,20 @@
 import type { AppProps } from "next/app";
 
 import { HeroUIProvider } from "@heroui/react";
+import { ToastProvider } from "@heroui/toast";
 
-import "@/styles/globals.css";
+import { MainTemplate } from "@template";
+
+import "@assets/style/font-face.css";
+import "@assets/style/app.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <HeroUIProvider>
-      <Component {...pageProps} />
+      <ToastProvider />
+      <MainTemplate>
+        <Component {...pageProps} />
+      </MainTemplate>
     </HeroUIProvider>
   );
 }

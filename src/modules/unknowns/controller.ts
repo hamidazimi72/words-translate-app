@@ -30,7 +30,8 @@ export const createQuestion = async () => {
       options.push(option);
     }
 
-    return { word: wordObj?.word, options: shuffleArray(options) };
+    return { word: wordObj?.word, translate: "4", options: shuffleArray(options) };
+    // return { word: wordObj?.word, translate: wordObj?.translate, options: shuffleArray(options) };
   } catch (err: any) {
     throw new Error(err?.message);
   }

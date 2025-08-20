@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="fa">
       <Head />
-      <body className="antialiased" dir="rtl">
+      <body className="antialiased bg-sky-50" dir="rtl">
         <Main />
         <NextScript />
       </body>
