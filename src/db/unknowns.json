@@ -3,7 +3,7 @@
     "word": "the",
     "translate": "",
     "frequency": 653,
-    "correctNumber": 0
+    "correctNumber": 1
   },
   "code": {
     "word": "code",
@@ -15,7 +15,7 @@
     "word": "and",
     "translate": "",
     "frequency": 319,
-    "correctNumber": 1
+    "correctNumber": 2
   },
   "that": {
     "word": "that",
@@ -27,12 +27,6 @@
     "word": "you",
     "frequency": 185,
     "translate": "",
-    "correctNumber": 0
-  },
-  "for": {
-    "word": "for",
-    "translate": "",
-    "frequency": 129,
     "correctNumber": 0
   },
   "this": {

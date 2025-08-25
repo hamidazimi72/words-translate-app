@@ -18,7 +18,7 @@ type formValuesType = { word: string; translate: string; frequency: string };
 
 const initialState = { word: "", translate: "", frequency: "" };
 
-const Question = () => {
+export const NewWord = () => {
   const [data, setData] = useState<{ word: string; options: string[] }>();
 
   const [form, setForm] = useState<formValuesType>(initialState);
@@ -143,4 +143,4 @@ const Question = () => {
   );
 };
 
-export default Question;
+export default NewWord;
