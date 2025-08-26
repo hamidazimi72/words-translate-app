@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import axios from "axios";
-import { Button, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Skeleton } from "@heroui/react";
+import { Button, Modal, ModalBody, ModalContent, ModalFooter, Skeleton } from "@heroui/react";
 
 export type QuizProps = {
   boxProps?: React.HTMLAttributes<HTMLDivElement>;
@@ -62,7 +62,7 @@ export const Quiz: React.FC<QuizProps> = ({ boxProps }) => {
   }, []);
 
   return (
-    <div className="min-h-dvh flex flex-col justify-end p-4">
+    <div className="w-full flex-1 flex flex-col justify-end p-4">
       <div className="h-24 bg-sky-500 rounded-lg shadow flex justify-center items-center text-white text-lg">
         {data?.word}
       </div>
@@ -70,9 +70,7 @@ export const Quiz: React.FC<QuizProps> = ({ boxProps }) => {
         {status === "loading"
           ? Array(4)
               .fill("")
-              .map((item, i) => (
-                <Skeleton key={i} className="rounded-lg h-10" isLoaded={status !== "loading"}></Skeleton>
-              ))
+              .map((item, i) => <Skeleton key={i} className="rounded-lg h-10" isLoaded={false}></Skeleton>)
           : data?.options.map((option, i) => (
               <Button
                 key={i}
@@ -86,7 +84,6 @@ export const Quiz: React.FC<QuizProps> = ({ boxProps }) => {
               </Button>
             ))}
       </div>
-
       <div className="mt-8 flex flex-col gap-2">
         <Button
           color="warning"
@@ -108,6 +105,7 @@ export const Quiz: React.FC<QuizProps> = ({ boxProps }) => {
         </Button>
       </div>
 
+      {/* Transfer Modal */}
       <Modal
         isOpen={showTransferModal}
         onClose={() => {

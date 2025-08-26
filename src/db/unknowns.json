@@ -1,433 +1,127 @@
 {
-  "the": {
-    "word": "the",
-    "translate": "",
-    "frequency": 653,
-    "correctNumber": 1
-  },
-  "code": {
-    "word": "code",
-    "translate": "",
-    "frequency": 358,
-    "correctNumber": 0
-  },
-  "and": {
-    "word": "and",
-    "translate": "",
-    "frequency": 319,
-    "correctNumber": 2
-  },
   "that": {
     "word": "that",
-    "translate": "",
+    "translate": "که",
     "frequency": 212,
-    "correctNumber": 0
-  },
-  "you": {
-    "word": "you",
-    "frequency": 185,
-    "translate": "",
-    "correctNumber": 0
-  },
-  "this": {
-    "word": "this",
-    "translate": "",
-    "frequency": 98,
     "correctNumber": 0
   },
   "clean": {
     "word": "clean",
-    "translate": "",
+    "translate": "تمیز",
     "frequency": 92,
-    "correctNumber": 0
-  },
-  "are": {
-    "word": "are",
-    "translate": "",
-    "frequency": 90,
-    "correctNumber": 0
-  },
-  "not": {
-    "word": "not",
-    "translate": "",
-    "frequency": 71,
     "correctNumber": 0
   },
   "will": {
     "word": "will",
-    "translate": "",
+    "translate": "خواهد",
     "frequency": 68,
-    "correctNumber": 0
-  },
-  "with": {
-    "word": "with",
-    "translate": "",
-    "frequency": 67,
-    "correctNumber": 0
-  },
-  "one": {
-    "word": "one",
-    "translate": "",
-    "frequency": 65,
-    "correctNumber": 0
-  },
-  "about": {
-    "word": "about",
-    "translate": "",
-    "frequency": 63,
-    "correctNumber": 0
-  },
-  "have": {
-    "word": "have",
-    "translate": "",
-    "frequency": 63,
-    "correctNumber": 0
-  },
-  "from": {
-    "word": "from",
-    "translate": "",
-    "frequency": 63,
-    "correctNumber": 0
-  },
-  "they": {
-    "word": "they",
-    "translate": "",
-    "frequency": 60,
     "correctNumber": 0
   },
   "what": {
     "word": "what",
-    "translate": "",
+    "translate": "چی؟ ",
     "frequency": 60,
-    "correctNumber": 0
-  },
-  "all": {
-    "word": "all",
-    "translate": "",
-    "frequency": 55,
-    "correctNumber": 0
-  },
-  "names": {
-    "word": "names",
-    "translate": "",
-    "frequency": 48,
-    "correctNumber": 0
-  },
-  "book": {
-    "word": "book",
-    "translate": "",
-    "frequency": 47,
-    "correctNumber": 0
-  },
-  "tests": {
-    "word": "tests",
-    "translate": "",
-    "frequency": 47,
     "correctNumber": 0
   },
   "our": {
     "word": "our",
-    "translate": "",
+    "translate": "مال ما ",
     "frequency": 46,
-    "correctNumber": 0
-  },
-  "can": {
-    "word": "can",
-    "translate": "",
-    "frequency": 45,
-    "correctNumber": 0
-  },
-  "but": {
-    "word": "but",
-    "translate": "",
-    "frequency": 41,
-    "correctNumber": 0
-  },
-  "see": {
-    "word": "see",
-    "translate": "",
-    "frequency": 40,
     "correctNumber": 0
   },
   "should": {
     "word": "should",
-    "translate": "",
+    "translate": "باید",
     "frequency": 39,
-    "correctNumber": 0
-  },
-  "comments": {
-    "word": "comments",
-    "translate": "",
-    "frequency": 39,
-    "correctNumber": 0
-  },
-  "more": {
-    "word": "more",
-    "translate": "",
-    "frequency": 38,
-    "correctNumber": 0
-  },
-  "design": {
-    "word": "design",
-    "translate": "",
-    "frequency": 38,
     "correctNumber": 0
   },
   "your": {
     "word": "your",
-    "translate": "",
-    "frequency": 36,
-    "correctNumber": 0
-  },
-  "function": {
-    "word": "function",
-    "translate": "",
+    "translate": "مال شما",
     "frequency": 36,
     "correctNumber": 0
   },
   "make": {
     "word": "make",
-    "translate": "",
-    "frequency": 35,
-    "correctNumber": 0
-  },
-  "good": {
-    "word": "good",
-    "translate": "",
+    "translate": "ساختن",
     "frequency": 35,
     "correctNumber": 0
   },
   "into": {
     "word": "into",
-    "translate": "",
+    "translate": "در - درون",
     "frequency": 35,
-    "correctNumber": 0
-  },
-  "software": {
-    "word": "software",
-    "translate": "",
-    "frequency": 33,
     "correctNumber": 0
   },
   "there": {
     "word": "there",
-    "translate": "",
-    "frequency": 33,
-    "correctNumber": 0
-  },
-  "bad": {
-    "word": "bad",
-    "translate": "",
-    "frequency": 33,
-    "correctNumber": 0
-  },
-  "time": {
-    "word": "time",
-    "translate": "",
+    "translate": "آنجا",
     "frequency": 33,
     "correctNumber": 0
   },
   "than": {
     "word": "than",
-    "translate": "",
+    "translate": "نسبت به",
     "frequency": 32,
-    "correctNumber": 0
-  },
-  "class": {
-    "word": "class",
-    "translate": "",
-    "frequency": 31,
     "correctNumber": 0
   },
   "how": {
     "word": "how",
-    "translate": "",
+    "translate": "چگونه ",
     "frequency": 29,
-    "correctNumber": 0
-  },
-  "classes": {
-    "word": "classes",
-    "translate": "",
-    "frequency": 29,
-    "correctNumber": 0
-  },
-  "use": {
-    "word": "use",
-    "translate": "",
-    "frequency": 28,
-    "correctNumber": 0
-  },
-  "system": {
-    "word": "system",
-    "translate": "",
-    "frequency": 28,
-    "correctNumber": 0
-  },
-  "functions": {
-    "word": "functions",
-    "translate": "",
-    "frequency": 28,
-    "correctNumber": 0
-  },
-  "programming": {
-    "word": "programming",
-    "translate": "",
-    "frequency": 27,
-    "correctNumber": 0
+    "correctNumber": 1
   },
   "chapter": {
     "word": "chapter",
-    "translate": "",
+    "translate": "فصل",
     "frequency": 27,
-    "correctNumber": 0
-  },
-  "read": {
-    "word": "read",
-    "translate": "",
-    "frequency": 26,
     "correctNumber": 0
   },
   "was": {
     "word": "was",
-    "translate": "",
+    "translate": "بود",
     "frequency": 26,
-    "correctNumber": 0
-  },
-  "when": {
-    "word": "when",
-    "translate": "",
-    "frequency": 26,
-    "correctNumber": 0
-  },
-  "change": {
-    "word": "change",
-    "translate": "",
-    "frequency": 26,
-    "correctNumber": 0
-  },
-  "simple": {
-    "word": "simple",
-    "translate": "",
-    "frequency": 26,
-    "correctNumber": 0
-  },
-  "writing": {
-    "word": "writing",
-    "translate": "",
-    "frequency": 25,
-    "correctNumber": 0
-  },
-  "these": {
-    "word": "these",
-    "translate": "",
-    "frequency": 25,
-    "correctNumber": 0
-  },
-  "java": {
-    "word": "java",
-    "translate": "",
-    "frequency": 25,
     "correctNumber": 0
   },
   "principles": {
     "word": "principles",
-    "translate": "",
-    "frequency": 25,
-    "correctNumber": 0
-  },
-  "don": {
-    "word": "don",
-    "translate": "",
-    "frequency": 25,
-    "correctNumber": 0
-  },
-  "level": {
-    "word": "level",
-    "translate": "",
-    "frequency": 25,
-    "correctNumber": 0
-  },
-  "arguments": {
-    "word": "arguments",
-    "translate": "",
-    "frequency": 25,
-    "correctNumber": 0
-  },
-  "like": {
-    "word": "like",
-    "translate": "",
+    "translate": "اصول",
     "frequency": 25,
     "correctNumber": 0
   },
   "also": {
     "word": "also",
-    "translate": "",
+    "translate": "همچنین",
     "frequency": 25,
     "correctNumber": 0
   },
   "making": {
     "word": "making",
-    "translate": "",
+    "translate": "ساختن",
     "frequency": 24,
-    "correctNumber": 0
-  },
-  "test": {
-    "word": "test",
-    "translate": "",
-    "frequency": 24,
-    "correctNumber": 0
-  },
-  "patterns": {
-    "word": "patterns",
-    "translate": "",
-    "frequency": 24,
-    "correctNumber": 0
-  },
-  "language": {
-    "word": "language",
-    "translate": "",
-    "frequency": 24,
-    "correctNumber": 0
-  },
-  "work": {
-    "word": "work",
-    "translate": "",
-    "frequency": 23,
     "correctNumber": 0
   },
   "has": {
     "word": "has",
-    "translate": "",
+    "translate": "داشتن",
     "frequency": 23,
-    "correctNumber": 0
-  },
-  "small": {
-    "word": "small",
-    "translate": "",
-    "frequency": 22,
     "correctNumber": 0
   },
   "abstraction": {
     "word": "abstraction",
-    "translate": "",
+    "translate": "انتزاعی",
     "frequency": 22,
     "correctNumber": 0
   },
   "using": {
     "word": "using",
-    "translate": "",
-    "frequency": 22,
-    "correctNumber": 0
-  },
-  "other": {
-    "word": "other",
-    "translate": "",
+    "translate": "در حال استفاده",
     "frequency": 22,
     "correctNumber": 0
   },
   "think": {
     "word": "think",
-    "translate": "",
+    "translate": "فکر کردن",
     "frequency": 22,
     "correctNumber": 0
   },
@@ -475,12 +169,6 @@
   },
   "their": {
     "word": "their",
-    "translate": "",
-    "frequency": 20,
-    "correctNumber": 0
-  },
-  "error": {
-    "word": "error",
     "translate": "",
     "frequency": 20,
     "correctNumber": 0

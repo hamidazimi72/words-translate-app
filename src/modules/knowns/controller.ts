@@ -1,7 +1,7 @@
 import { Knowns, Unknowns } from "@/modules";
 
-export const fetchAllWords = async () => {
-  return await Knowns.Model.getAllWords();
+export const fetchAllWords = async (page: number, limit: number, word: string | null) => {
+  return await Knowns.Model.getPaginatedAllWords(page, limit, word);
 };
 
 export const updateWords = async (word: string) => {

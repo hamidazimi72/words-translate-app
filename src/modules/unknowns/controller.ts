@@ -20,13 +20,13 @@ export const createQuestion = async () => {
     const wordObj = slicedUnknownsList[generateRandomIndex(slicedUnknownsList.length)];
     const options: string[] = [];
 
-    // options.push(wordObj?.translate);
-    options.push("4");
+    options.push(wordObj?.translate);
+    // options.push("4");
 
     for (let i = 0; i < 3; i++) {
-      // const obj = slicedUnkownsItems[generateRandomIndex()];
-      // const option = obj?.translate;
-      const option = (i + 1).toString();
+      const obj = slicedUnknownsList[generateRandomIndex(slicedUnknownsList.length)];
+      const option = obj?.translate;
+      // const option = (i + 1).toString();
       options.push(option);
     }
 

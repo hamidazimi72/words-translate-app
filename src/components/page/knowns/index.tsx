@@ -1,22 +1,24 @@
 import { useEffect, useState } from "react";
 
 import axios from "axios";
-import { Button, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader } from "@heroui/react";
+import { Button, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Pagination } from "@heroui/react";
 
 import { Knowns as KnownsModules } from "@/modules";
 
 export const Knowns = () => {
   const [data, setData] = useState<{ word: string; frequency: number; translate: string }[]>([]);
+  const [total, setTotal] = useState<number>(0);
   const [status, setStatus] = useState<"init" | "loading" | "ok" | "fail">("init");
   const [selectedItem, setSelectedItem] = useState<KnownsModules.Type.item | null>(null);
 
   const fetchAllDataHandler = () => {
     setStatus("loading");
     axios
-      .get(`/api/permanent-memory/fetch-all`)
+      .get(`/api/permanent-memory/fetch-all?page=1&limit=10`)
       .then((res) => {
-        const data: KnownsModules.Type.item[] = Object.values(res?.data?.info);
+        const data: KnownsModules.Type.item[] = res?.data?.info?.data;
         setData(data);
+        setTotal(res?.data?.info?.total);
         setStatus("ok");
       })
       .catch((err) => setStatus("fail"));
@@ -28,7 +30,6 @@ export const Knowns = () => {
       .post(`/api/permanent-memory/return-word`, { word: selectedItem?.word })
       .then((res) => {
         setData(Object.values(res?.data?.info));
-        // fetchAllDataHandler();
         setStatus("ok");
         setSelectedItem(null);
       })
@@ -40,7 +41,7 @@ export const Knowns = () => {
   }, []);
 
   return (
-    <div className="p-4">
+    <div className="w-full p-4">
       <ul className="flex flex-col gap-4">
         {data?.map((item, i) => (
           <li key={i} className="flex justify-between items-center gap-2">
@@ -51,6 +52,15 @@ export const Knowns = () => {
           </li>
         ))}
       </ul>
+
+      <Pagination
+        showControls
+        color="primary"
+        variant="flat"
+        page={1}
+        onChange={(page) => console.log(page)}
+        total={total}
+      />
 
       <Modal
         isOpen={Boolean(selectedItem)}

@@ -4,12 +4,13 @@ export default function Home() {
   const routes = [
     { title: "شروع آزمون", path: "/quiz" },
     { title: "افزودن لغت جدید", path: "/new-word" },
+    { title: "ترجمه واژه‌ها", path: "/translate" },
     { title: "حافظه دائم", path: "/knowns" },
     { title: "تنظیمات", path: "/config" },
   ];
 
   return (
-    <div className="flex flex-col gap-4 p-4">
+    <div className="w-full flex flex-col gap-4 p-4">
       {routes.map((item, i) => (
         <Link
           key={i}

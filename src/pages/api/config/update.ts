@@ -16,7 +16,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   try {
     const configs = await Config.Controller.updateConfig(symbol || "", value || "");
-    res.status(200).json({ info: configs, message: "" });
+    res.status(200).json({ info: configs, message: "تنظیمات با موفقیت بروزرسانی شد!" });
   } catch (err) {
     res.status(500).json({ message: err });
   }

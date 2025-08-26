@@ -1,7 +1,267 @@
 {
+  "the": {
+    "word": "the",
+    "translate": "",
+    "frequency": 653
+  },
+  "code": {
+    "word": "code",
+    "translate": "",
+    "frequency": 358
+  },
+  "and": {
+    "word": "and",
+    "translate": "",
+    "frequency": 319
+  },
+  "you": {
+    "word": "you",
+    "translate": "",
+    "frequency": 185
+  },
   "for": {
     "word": "for",
     "translate": "",
     "frequency": 129
+  },
+  "this": {
+    "word": "this",
+    "translate": "",
+    "frequency": 98
+  },
+  "are": {
+    "word": "are",
+    "translate": "",
+    "frequency": 90
+  },
+  "not": {
+    "word": "not",
+    "translate": "",
+    "frequency": 71
+  },
+  "with": {
+    "word": "with",
+    "translate": "",
+    "frequency": 67
+  },
+  "one": {
+    "word": "one",
+    "translate": "",
+    "frequency": 65
+  },
+  "about": {
+    "word": "about",
+    "translate": "",
+    "frequency": 63
+  },
+  "have": {
+    "word": "have",
+    "translate": "",
+    "frequency": 63
+  },
+  "from": {
+    "word": "from",
+    "translate": "",
+    "frequency": 63
+  },
+  "they": {
+    "word": "they",
+    "translate": "",
+    "frequency": 60
+  },
+  "all": {
+    "word": "all",
+    "translate": "",
+    "frequency": 55
+  },
+  "names": {
+    "word": "names",
+    "translate": "",
+    "frequency": 48
+  },
+  "tests": {
+    "word": "tests",
+    "translate": "",
+    "frequency": 47
+  },
+  "book": {
+    "word": "book",
+    "translate": "",
+    "frequency": 47
+  },
+  "can": {
+    "word": "can",
+    "translate": "",
+    "frequency": 45
+  },
+  "but": {
+    "word": "but",
+    "translate": "",
+    "frequency": 41
+  },
+  "see": {
+    "word": "see",
+    "translate": "",
+    "frequency": 40
+  },
+  "comments": {
+    "word": "comments",
+    "translate": "",
+    "frequency": 39
+  },
+  "more": {
+    "word": "more",
+    "translate": "",
+    "frequency": 38
+  },
+  "design": {
+    "word": "design",
+    "translate": "",
+    "frequency": 38
+  },
+  "function": {
+    "word": "function",
+    "translate": "",
+    "frequency": 36
+  },
+  "good": {
+    "word": "good",
+    "translate": "",
+    "frequency": 35
+  },
+  "software": {
+    "word": "software",
+    "translate": "",
+    "frequency": 33
+  },
+  "bad": {
+    "word": "bad",
+    "translate": "",
+    "frequency": 33
+  },
+  "time": {
+    "word": "time",
+    "translate": "",
+    "frequency": 33
+  },
+  "class": {
+    "word": "class",
+    "translate": "",
+    "frequency": 31
+  },
+  "classes": {
+    "word": "classes",
+    "translate": "",
+    "frequency": 29
+  },
+  "use": {
+    "word": "use",
+    "translate": "",
+    "frequency": 28
+  },
+  "system": {
+    "word": "system",
+    "translate": "",
+    "frequency": 28
+  },
+  "functions": {
+    "word": "functions",
+    "translate": "",
+    "frequency": 28
+  },
+  "programming": {
+    "word": "programming",
+    "translate": "",
+    "frequency": 27
+  },
+  "read": {
+    "word": "read",
+    "translate": "",
+    "frequency": 26
+  },
+  "when": {
+    "word": "when",
+    "translate": "",
+    "frequency": 26
+  },
+  "change": {
+    "word": "change",
+    "translate": "",
+    "frequency": 26
+  },
+  "simple": {
+    "word": "simple",
+    "translate": "",
+    "frequency": 26
+  },
+  "writing": {
+    "word": "writing",
+    "translate": "",
+    "frequency": 25
+  },
+  "these": {
+    "word": "these",
+    "translate": "",
+    "frequency": 25
+  },
+  "java": {
+    "word": "java",
+    "translate": "",
+    "frequency": 25
+  },
+  "don": {
+    "word": "don",
+    "translate": "",
+    "frequency": 25
+  },
+  "level": {
+    "word": "level",
+    "translate": "",
+    "frequency": 25
+  },
+  "arguments": {
+    "word": "arguments",
+    "translate": "",
+    "frequency": 25
+  },
+  "like": {
+    "word": "like",
+    "translate": "",
+    "frequency": 25
+  },
+  "test": {
+    "word": "test",
+    "translate": "",
+    "frequency": 24
+  },
+  "patterns": {
+    "word": "patterns",
+    "translate": "",
+    "frequency": 24
+  },
+  "language": {
+    "word": "language",
+    "translate": "",
+    "frequency": 24
+  },
+  "work": {
+    "word": "work",
+    "translate": "",
+    "frequency": 23
+  },
+  "small": {
+    "word": "small",
+    "translate": "",
+    "frequency": 22
+  },
+  "other": {
+    "word": "other",
+    "translate": "",
+    "frequency": 22
+  },
+  "error": {
+    "word": "error",
+    "translate": "",
+    "frequency": 20
   }
 }
